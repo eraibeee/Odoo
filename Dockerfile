@@ -1,1 +1,1 @@
-From odoo:16.0
+From odoo:18.0
