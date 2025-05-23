@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: odoo-web
+    runtime: docker
+    plan: free
+    env: docker
+    healthCheckPath: /web
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: 8069
+databases:
+  - name: odoo-db
+    plan: free
+    databaseName: odoo
+    user: odoo
